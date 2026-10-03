@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Application - GS KIGEME A</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>GS KIGEME A</h1>
+        <p>Student Admission Application</p>
+    </header>
+
+    <main class="application-container">
+
+        <h2>Student Application Form</h2>
+        <p>Please complete the form below to apply for admission.</p>
+
+        <form id="applicationForm">
+
+            <!-- Student Information -->
+            <fieldset>
+                <legend>Student Information</legend>
+
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" name="fullname"
+                       placeholder="Enter student's full name" required>
+
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" name="dob" required>
+
+                <label for="gender">Gender</label>
+                <select id="gender" name="gender" required>
+                    <option value="">Select Gender</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                </select>
+
+                <label for="class">Class Applying For</label>
+                <select id="class" name="class" required>
+                    <option value="">Select Class</option>
+                    <option>S1</option>
+                    <option>S2</option>
+                    <option>S3</option>
+                    <option>S4</option>
+                    <option>S5</option>
+                    <option>S6</option>
+                </select>
+
+            </fieldset>
+
+            <!-- Parent Information -->
+            <fieldset>
+                <legend>Parent / Guardian Information</legend>
+
+                <label for="parent">Parent / Guardian Name</label>
+                <input type="text" id="parent" name="parent"
+                       placeholder="Enter parent or guardian name" required>
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone"
+                       placeholder="Enter phone number" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email"
+                       placeholder="Enter email address">
+
+                <label for="address">Home Address</label>
+                <textarea id="address" name="address"
+                          placeholder="Enter home address" required></textarea>
+
+            </fieldset>
+
+            <!-- Previous School -->
+            <fieldset>
+                <legend>Previous School Information</legend>
+
+                <label for="previousSchool">Previous School</label>
+                <input type="text" id="previousSchool"
+                       name="previousSchool"
+                       placeholder="Name of previous school">
+
+                <label for="year">Year of Completion</label>
+                <input type="number" id="year" name="year"
+                       placeholder="e.g. 2026">
+
+            </fieldset>
+
+            <!-- Documents -->
+            <fieldset>
+                <legend>Documents</legend>
+
+                <label for="document">Upload Supporting Document</label>
+                <input type="file" id="document" name="document">
+
+            </fieldset>
+
+            <!-- Declaration -->
+            <fieldset>
+                <legend>Declaration</legend>
+
+                <label class="checkbox">
+                    <input type="checkbox" required>
+                    I confirm that the information provided is correct.
+                </label>
+
+            </fieldset>
+
+            <button type="submit" class="submit-btn">
+                Submit Application
+            </button>
+
+        </form>
+
+        <div id="successMessage"></div>
+
+    </main>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
