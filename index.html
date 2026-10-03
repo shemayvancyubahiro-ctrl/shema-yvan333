@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GS KIGEME A</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+  <header>
+    <h1><img src="logo (1).svg" alt="" style="height:40px; vertical-align:middle; margin-right:10px;">GS Kigeme A</h1>
+    <nav>
+     <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="academics.html">Academics</a>
+    <a href="students.html">Students</a>
+    <a href="teachers.html">Teachers</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="news.html">News</a>
+    <a href="contact.html">Contact</a>
+    <a href="application.html" class="apply-link">Apply Now</a>
+</nav>
+  </header>
+
+  <section id="home" class="hero">
+    <img src="logo (1).svg" alt="GS Kigeme A logo" class="logo">
+    <h2>Welcome to Our School</h2>
+    <p>Learning today, leading tomorrow.</p>
+     <a href="application.html" class="hero-apply-btn">
+    Apply for Admission
+  </a>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+   <img src="school.jpg (4).jpg" alt="GS Kigeme A school" class="school-photo">  
+    <p>GS Kigeme A is a secondary school managed by the Anglican Church of Rwanda, Kigeme Diocese, together with the Government of Rwanda, and it sits close to the main road from Kigali to Butare and Cyangugu. The school began in 1965 and grew step by step into Groupe Scolaire Kigeme in 1990. It started with girls only and later became co-educational. Today it offers the ordinary level and three combinations: MCB, PCB and MPC and streams levels(MS1&MS2
+        S).</p>
+          <section id="gallery">
+    <h2>Life at Our School</h2>
+    <div class="slideshow">
+      <div class="slide active">
+        <img src="SCHOOL.JPG.jpg" alt="Learning">
+        <p class="caption">school gate </p>
+      </div>
+      <div class="slide">
+        <img src="schoolI.JPG" alt="Sports">
+        <p class="caption">inside the school</p>
+      </div>
+      <div class="slide">
+        <img src="school.jpg (5).jpg" alt="Science">
+        <p class="caption">Bishop</p>
+      </div>
+      <div class="slide">
+        <img src="LIBRARY.jpg" alt="Community">
+        <p class="caption">school library</p>
+      </div>
+    </div>
+  </section>
+  </section>
+
+  <section id="subjects">
+    <h2>Our Combinations</h2>
+  <div class="cards">
+    <div class="card">MCB<br><small>Mathematics, Chemistry, Biology</small></div>
+    <div class="card">PCB<br><small>Physics, Chemistry, Biology</small></div>
+    <div class="card">PCM<br><small>Physics, Chemistry, Mathematics</small></div>
+     <div class="card">MS1<br><small>Physics, Chemistry,Biology, Mathematics</small></div>
+    <div class="card">MS2<br><small>Physics, Economics,Geography, Mathematics</small></div>
+     <div class="card">MPC<br><small>Physics, Computer Science, Mathematics</small></div>
+    
+
+    <div class="card">Ordinary Level<br><small>Senior 1 to Senior 3</small></div>
+  </div>
+    
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Phone: 0796345569</p>
+    <p>Email: gskigeme@gmail.com</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 GS KIGEME A</p>
+  </footer>
+
+  <script>
+    const slides = document.querySelectorAll(".slide");
+    let current = 0;
+
+    setInterval(function () {
+      slides[current].classList.remove("active");
+      current = (current + 1) % slides.length;
+      slides[current].classList.add("active");
+    }, 4000);
+  </script>
+
+
+</body>
+</html>
