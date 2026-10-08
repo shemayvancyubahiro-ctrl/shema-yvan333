@@ -1,322 +1,832 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Students | GS Kigeme A</title>
-    <link rel="stylesheet" href="style.css">
+
+    <title>Students | GS KIGEME A</title>
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-<header>
-    <h1>
-        <img src="logo (1).svg" alt="GS Kigeme A Logo"
-             style="height:40px; vertical-align:middle; margin-right:10px;">
-        GS Kigeme A
-    </h1>
+    <!-- ================= HEADER ================= -->
+    <header class="site-header">
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="academics.html">Academics</a>
-        <a href="students.html" class="active">Students</a>
-        <a href="teachers.html">Teachers</a>
-        <a href="application.html" class="apply-link">Apply Now</a>
-    </nav>
-</header>
+        <div class="container header-container">
 
-<section class="page-hero">
-    <img src="logo (1).svg" alt="School Logo" class="page-logo">
+            <a href="index.html" class="brand">
 
-    <h2>Student Life at GS Kigeme A</h2>
+                <img src="images/log333.jpg"
+                     alt="GS KIGEME A Logo"
+                     class="school-logo">
 
-    <p>
-        Learning, friendship, leadership and personal growth.
-    </p>
-</section>
+                <div class="brand-text">
+                    <h1>GS KIGEME A</h1>
+                    <span>Learning today, leading tomorrow.</span>
+                </div>
 
-<section class="student-intro">
+            </a>
 
-    <span class="section-tag">OUR STUDENTS</span>
+            <button class="menu-toggle" aria-label="Open navigation">
+                ☰
+            </button>
 
-    <h2>Growing Together</h2>
+            <nav class="main-nav">
 
-    <p>
-        At GS Kigeme A, students are encouraged to learn,
-        discover their talents, work together and become
-        responsible members of society.
-    </p>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="academics.html">Academics</a>
+                <a href="students.html" class="active">Students</a>
+                <a href="teachers.html">Teachers</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="news.html">News</a>
 
-</section>
+               <a href="admission/index.php">Admission</a>
 
+            </nav>
 
-<section class="student-section">
-
-    <h2>Student Life</h2>
-
-    <div class="student-cards">
-
-        <div class="student-card">
-            <div class="student-icon">📚</div>
-            <h3>Learning</h3>
-            <p>
-                Students develop knowledge and skills through
-                classroom learning, practical activities and teamwork.
-            </p>
         </div>
 
-        <div class="student-card">
-            <div class="student-icon">🤝</div>
-            <h3>Friendship</h3>
+    </header>
+
+
+    <!-- ================= STUDENTS HERO ================= -->
+    <section class="students-hero">
+
+        <div class="container students-hero-content reveal">
+
+            <span class="section-label light-label">
+                STUDENT LIFE • LEADERSHIP • EXCELLENCE
+            </span>
+
+            <h2>
+                Growing Students Beyond the Classroom.
+            </h2>
+
             <p>
-                Students build positive relationships and learn
-                how to respect and support one another.
+                At GS KIGEME A, students are encouraged to learn,
+                participate, lead, discover their talents and prepare
+                for a successful future.
             </p>
+
+            <div class="hero-buttons">
+
+                <a href="#student-life" class="btn btn-primary">
+                    Explore Student Life
+                </a>
+
+                <a href="admission/index.php" class="btn btn-outline">
+                    Apply Now
+                </a>
+
+            </div>
+
         </div>
 
-        <div class="student-card">
-            <div class="student-icon">💡</div>
-            <h3>Creativity</h3>
-            <p>
-                Students are encouraged to develop ideas,
-                solve problems and discover their talents.
-            </p>
+    </section>
+
+
+    <!-- ================= INTRODUCTION ================= -->
+    <section class="section students-introduction">
+
+        <div class="container students-intro-grid">
+
+            <div class="students-intro-image reveal">
+
+                <img src="images/student.jpg"
+                     alt="GS KIGEME A students">
+
+            </div>
+
+            <div class="students-intro-content reveal">
+
+                <span class="section-label">
+                    OUR STUDENTS
+                </span>
+
+                <h2>
+                    Empowering Every Student to Grow
+                </h2>
+
+                <p>
+                    Our students are at the heart of GS KIGEME A.
+                    We create an environment where learners can
+                    develop academically, socially and personally.
+                </p>
+
+                <p>
+                    Through classroom learning, teamwork,
+                    extracurricular activities and leadership
+                    opportunities, students are encouraged to
+                    discover their strengths and become responsible
+                    members of their communities.
+                </p>
+
+                <div class="student-stats">
+
+                    <div class="student-stat">
+                        <strong>01</strong>
+                        <span>Learning</span>
+                    </div>
+
+                    <div class="student-stat">
+                        <strong>02</strong>
+                        <span>Leadership</span>
+                    </div>
+
+                    <div class="student-stat">
+                        <strong>03</strong>
+                        <span>Talent</span>
+                    </div>
+
+                </div>
+
+            </div>
+
         </div>
 
-        <div class="student-card">
-            <div class="student-icon">🌱</div>
-            <h3>Personal Growth</h3>
-            <p>
-                School activities help students develop confidence,
-                discipline and responsibility.
-            </p>
+    </section>
+
+
+    <!-- ================= STUDENT LIFE ================= -->
+    <section class="section light-section" id="student-life">
+
+        <div class="container">
+
+            <div class="section-heading reveal">
+
+                <span class="section-label">
+                    STUDENT LIFE
+                </span>
+
+                <h2>
+                    Learn, Participate, Lead
+                </h2>
+
+                <p>
+                    School life is more than lessons. Students have
+                    opportunities to develop skills, friendships,
+                    confidence and leadership through different
+                    activities.
+                </p>
+
+            </div>
+
+
+            <div class="student-life-grid">
+
+                <!-- CARD 1 -->
+                <article class="student-life-card reveal">
+
+                    <div class="student-life-icon">
+                        📚
+                    </div>
+
+                    <h3>Academic Life</h3>
+
+                    <p>
+                        Students develop knowledge and problem-solving
+                        skills through lessons, assignments, revision
+                        and collaborative learning.
+                    </p>
+
+                </article>
+
+
+                <!-- CARD 2 -->
+                <article class="student-life-card reveal">
+
+                    <div class="student-life-icon">
+                        ⚽
+                    </div>
+
+                    <h3>Sports</h3>
+
+                    <p>
+                        Sporting activities encourage teamwork,
+                        discipline, fitness and a healthy competitive
+                        spirit.
+                    </p>
+
+                </article>
+
+
+                <!-- CARD 3 -->
+                <article class="student-life-card reveal">
+
+                    <div class="student-life-icon">
+                        🎨
+                    </div>
+
+                    <h3>Arts & Talent</h3>
+
+                    <p>
+                        Students can express their creativity through
+                        arts, music, culture and other talents.
+                    </p>
+
+                </article>
+
+
+                <!-- CARD 4 -->
+                <article class="student-life-card reveal">
+
+                    <div class="student-life-icon">
+                        🌱
+                    </div>
+
+                    <h3>Community Service</h3>
+
+                    <p>
+                        Students learn the importance of responsibility,
+                        service and making a positive contribution to
+                        society.
+                    </p>
+
+                </article>
+
+
+                <!-- CARD 5 -->
+                <article class="student-life-card reveal">
+
+                    <div class="student-life-icon">
+                        💡
+                    </div>
+
+                    <h3>Innovation</h3>
+
+                    <p>
+                        Learners are encouraged to think creatively,
+                        solve problems and develop ideas that can
+                        improve their communities.
+                    </p>
+
+                </article>
+
+
+                <!-- CARD 6 -->
+                <article class="student-life-card reveal">
+
+                    <div class="student-life-icon">
+                        🤝
+                    </div>
+
+                    <h3>Teamwork</h3>
+
+                    <p>
+                        Group activities help students build
+                        communication skills, cooperation and respect
+                        for others.
+                    </p>
+
+                </article>
+
+            </div>
+
         </div>
 
-    </div>
-
-</section>
+    </section>
 
 
-<section class="student-section green-section">
+    <!-- ================= CLUBS ================= -->
+    <section class="section students-clubs">
 
-    <h2>Clubs & Activities</h2>
+        <div class="container">
 
-    <div class="student-cards">
+            <div class="section-heading reveal">
 
-        <div class="student-card">
-            <div class="student-icon">🔬</div>
-            <h3>Science Club</h3>
-            <p>
-                Encourages scientific thinking, experiments
-                and problem solving.
-            </p>
+                <span class="section-label">
+                    CLUBS & ACTIVITIES
+                </span>
+
+                <h2>
+                    Discover Your Interests
+                </h2>
+
+                <p>
+                    Clubs and school activities provide students with
+                    opportunities to explore interests and develop
+                    practical skills outside the classroom.
+                </p>
+
+            </div>
+
+
+            <div class="clubs-grid">
+
+                <div class="club-card reveal">
+                    <span>01</span>
+                    <h3>Science Club</h3>
+                    <p>
+                        Explore scientific ideas, experiments and
+                        problem-solving activities.
+                    </p>
+                </div>
+
+                <div class="club-card reveal">
+                    <span>02</span>
+                    <h3>ICT & Technology</h3>
+                    <p>
+                        Develop digital skills and discover how
+                        technology can solve real-world problems.
+                    </p>
+                </div>
+
+                <div class="club-card reveal">
+                    <span>03</span>
+                    <h3>Debate Club</h3>
+                    <p>
+                        Improve public speaking, communication,
+                        confidence and critical thinking.
+                    </p>
+                </div>
+
+                <div class="club-card reveal">
+                    <span>04</span>
+                    <h3>Environment Club</h3>
+                    <p>
+                        Promote environmental awareness and
+                        responsible care for our surroundings.
+                    </p>
+                </div>
+
+                <div class="club-card reveal">
+                    <span>05</span>
+                    <h3>Sports Activities</h3>
+                    <p>
+                        Participate in physical activities and
+                        develop teamwork and discipline.
+                    </p>
+                </div>
+
+                <div class="club-card reveal">
+                    <span>06</span>
+                    <h3>Leadership Activities</h3>
+                    <p>
+                        Develop responsibility, confidence and
+                        leadership skills through student participation.
+                    </p>
+                </div>
+
+            </div>
+
         </div>
 
-        <div class="student-card">
-            <div class="student-icon">💻</div>
-            <h3>ICT & Coding Club</h3>
-            <p>
-                Students explore computers, programming and
-                digital skills.
-            </p>
+    </section>
+
+
+    <!-- ================= LEADERSHIP ================= -->
+    <section class="section light-section">
+
+        <div class="container leadership-grid">
+
+            <div class="leadership-content reveal">
+
+                <span class="section-label">
+                    STUDENT LEADERSHIP
+                </span>
+
+                <h2>
+                    Building Confident Young Leaders
+                </h2>
+
+                <p>
+                    Student leadership gives learners the opportunity
+                    to take responsibility, communicate with others
+                    and contribute to the school community.
+                </p>
+
+                <div class="leadership-list">
+
+                    <div class="leadership-item">
+                        <strong>01</strong>
+                        <div>
+                            <h3>Responsibility</h3>
+                            <p>
+                                Students learn to take responsibility
+                                for their roles and decisions.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="leadership-item">
+                        <strong>02</strong>
+                        <div>
+                            <h3>Communication</h3>
+                            <p>
+                                Leadership activities strengthen
+                                speaking and listening skills.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="leadership-item">
+                        <strong>03</strong>
+                        <div>
+                            <h3>Teamwork</h3>
+                            <p>
+                                Student leaders learn to cooperate
+                                and work effectively with others.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="leadership-image reveal">
+
+                <img src="images/compound.jpg"
+                     alt="GS KIGEME A school environment">
+
+            </div>
+
         </div>
 
-        <div class="student-card">
-            <div class="student-icon">🎤</div>
-            <h3>Debate Club</h3>
-            <p>
-                Students improve communication, confidence
-                and public speaking skills.
-            </p>
+    </section>
+
+
+    <!-- ================= ACHIEVEMENTS ================= -->
+    <section class="section students-achievements">
+
+        <div class="container">
+
+            <div class="section-heading reveal">
+
+                <span class="section-label">
+                    ACHIEVEMENT & EXCELLENCE
+                </span>
+
+                <h2>
+                    Celebrating Student Success
+                </h2>
+
+                <p>
+                    We value progress and encourage students to aim
+                    high in academics, leadership, sports, creativity
+                    and community activities.
+                </p>
+
+            </div>
+
+
+            <div class="achievement-grid">
+
+                <div class="achievement-card reveal">
+
+                    <div class="achievement-icon">
+                        🏆
+                    </div>
+
+                    <h3>Academic Excellence</h3>
+
+                    <p>
+                        Encouraging learners to achieve their academic
+                        goals through commitment and consistent effort.
+                    </p>
+
+                </div>
+
+
+                <div class="achievement-card reveal">
+
+                    <div class="achievement-icon">
+                        ⭐
+                    </div>
+
+                    <h3>Talent Development</h3>
+
+                    <p>
+                        Supporting students as they discover and
+                        develop their individual talents.
+                    </p>
+
+                </div>
+
+
+                <div class="achievement-card reveal">
+
+                    <div class="achievement-icon">
+                        🌍
+                    </div>
+
+                    <h3>Community Impact</h3>
+
+                    <p>
+                        Encouraging students to use their knowledge
+                        and skills to contribute to their communities.
+                    </p>
+
+                </div>
+
+            </div>
+
         </div>
 
-        <div class="student-card">
-            <div class="student-icon">🌳</div>
-            <h3>Environment Club</h3>
-            <p>
-                Students participate in activities that promote
-                environmental protection.
-            </p>
+    </section>
+
+
+    <!-- ================= STUDENT EXPECTATIONS ================= -->
+    <section class="section light-section">
+
+        <div class="container">
+
+            <div class="section-heading reveal">
+
+                <span class="section-label">
+                    OUR EXPECTATIONS
+                </span>
+
+                <h2>
+                    Be Ready to Learn and Grow
+                </h2>
+
+            </div>
+
+
+            <div class="expectations-grid">
+
+                <div class="expectation-card reveal">
+                    <span>01</span>
+                    <h3>Respect</h3>
+                    <p>
+                        Respect teachers, fellow students and the
+                        school community.
+                    </p>
+                </div>
+
+                <div class="expectation-card reveal">
+                    <span>02</span>
+                    <h3>Discipline</h3>
+                    <p>
+                        Demonstrate responsibility and positive
+                        behaviour in school.
+                    </p>
+                </div>
+
+                <div class="expectation-card reveal">
+                    <span>03</span>
+                    <h3>Hard Work</h3>
+                    <p>
+                        Approach learning with focus, determination
+                        and commitment.
+                    </p>
+                </div>
+
+                <div class="expectation-card reveal">
+                    <span>04</span>
+                    <h3>Team Spirit</h3>
+                    <p>
+                        Work together and support other members of
+                        the school community.
+                    </p>
+                </div>
+
+            </div>
+
         </div>
 
-        <div class="student-card">
-            <div class="student-icon">🎨</div>
-            <h3>Arts & Culture</h3>
-            <p>
-                Students express themselves through art,
-                music, culture and performance.
-            </p>
+    </section>
+
+
+    <!-- ================= CTA ================= -->
+    <section class="section admission-cta">
+
+        <div class="container admission-cta-inner reveal">
+
+            <div>
+
+                <span class="section-label light-label">
+                    JOIN OUR COMMUNITY
+                </span>
+
+                <h2>
+                    Ready to Begin Your Journey?
+                </h2>
+
+                <p>
+                    Become part of the GS KIGEME A community and
+                    discover opportunities to learn, grow and lead.
+                </p>
+
+            </div>
+
+            <a href="admission/index.php" class="btn btn-primary">
+                Apply to GS KIGEME A
+            </a>
+
         </div>
 
-        <div class="student-card">
-            <div class="student-icon">❤️</div>
-            <h3>Community Service</h3>
-            <p>
-                Students participate in activities that support
-                their school and community.
-            </p>
+    </section>
+
+
+    <!-- ================= CONTACT ================= -->
+    <section class="section contact-section">
+
+        <div class="container">
+
+            <div class="section-heading reveal">
+
+                <span class="section-label">
+                    CONTACT US
+                </span>
+
+                <h2>
+                    Get in Touch
+                </h2>
+
+            </div>
+
+
+            <div class="contact-grid">
+
+                <div class="contact-card reveal">
+
+                    <div class="contact-icon">
+                        📞
+                    </div>
+
+                    <h3>Phone</h3>
+
+                    <a href="tel:0788600587">
+                        0788600587
+                    </a>
+
+                </div>
+
+
+                <div class="contact-card reveal">
+
+                    <div class="contact-icon">
+                        ✉️
+                    </div>
+
+                    <h3>Email</h3>
+
+                    <a href="mailto:gskigeme2@yahoo.com">
+                        gskigeme2@yahoo.com
+                    </a>
+
+                </div>
+
+
+                <div class="contact-card reveal">
+
+                    <div class="contact-icon">
+                        💬
+                    </div>
+
+                    <h3>WhatsApp</h3>
+
+                    <a href="https://wa.me/250788600587"
+                       target="_blank">
+                        Chat With Us
+                    </a>
+
+                </div>
+
+            </div>
+
         </div>
 
-    </div>
-
-</section>
+    </section>
 
 
-<section class="student-section">
+    <!-- ================= FOOTER ================= -->
+    <footer class="site-footer">
 
-    <h2>Sports</h2>
+        <div class="container footer-grid">
 
-    <div class="student-cards">
+            <div>
 
-        <div class="student-card sport-card">
-            <div class="student-icon">⚽</div>
-            <h3>Football</h3>
-            <p>
-                Building teamwork, discipline and physical fitness.
-            </p>
+                <h3>GS KIGEME A</h3>
+
+                <p>
+                    Learning today, leading tomorrow.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h4>Quick Links</h4>
+
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="academics.html">Academics</a>
+                <a href="students.html">Students</a>
+
+            </div>
+
+
+            <div>
+
+                <h4>Contact</h4>
+
+                <p>0788600587</p>
+                <p>gskigeme2@yahoo.com</p>
+
+            </div>
+
         </div>
 
-        <div class="student-card sport-card">
-            <div class="student-icon">🏐</div>
-            <h3>Volleyball</h3>
+
+        <div class="footer-bottom">
+
             <p>
-                Developing cooperation, focus and athletic skills.
+                © <span id="year"></span> GS KIGEME A.
+                All Rights Reserved.
             </p>
+
         </div>
 
-        <div class="student-card sport-card">
-            <div class="student-icon">🏀</div>
-            <h3>Basketball</h3>
-            <p>
-                Encouraging teamwork, speed and coordination.
-            </p>
-        </div>
-
-        <div class="student-card sport-card">
-            <div class="student-icon">🏃</div>
-            <h3>Athletics</h3>
-            <p>
-                Promoting fitness, determination and healthy living.
-            </p>
-        </div>
-
-    </div>
-
-</section>
+    </footer>
 
 
-<section class="student-section green-section">
+    <!-- ================= FLOATING WHATSAPP ================= -->
+    <a href="https://wa.me/250788600587"
+       class="whatsapp-float"
+       target="_blank"
+       aria-label="Contact GS KIGEME A on WhatsApp">
 
-    <h2>Student Leadership</h2>
+        💬
 
-    <p>
-        Students have opportunities to develop leadership skills
-        through responsibilities and teamwork.
-    </p>
-
-    <div class="student-cards">
-
-        <div class="student-card">
-            <h3>Responsibility</h3>
-            <p>
-                Students learn to take responsibility for their
-                duties and decisions.
-            </p>
-        </div>
-
-        <div class="student-card">
-            <h3>Teamwork</h3>
-            <p>
-                Students learn how to cooperate and achieve
-                common goals.
-            </p>
-        </div>
-
-        <div class="student-card">
-            <h3>Communication</h3>
-            <p>
-                Students develop confidence in communicating
-                their ideas.
-            </p>
-        </div>
-
-        <div class="student-card">
-            <h3>Discipline</h3>
-            <p>
-                Students are encouraged to respect school rules
-                and responsibilities.
-            </p>
-        </div>
-
-    </div>
-
-</section>
-
-
-<section class="student-section">
-
-    <h2>Student Achievements</h2>
-
-    <div class="student-cards">
-
-        <div class="student-card">
-            <div class="student-icon">🏆</div>
-            <h3>Academic Success</h3>
-            <p>
-                Encouraging students to work hard and achieve
-                their educational goals.
-            </p>
-        </div>
-
-        <div class="student-card">
-            <div class="student-icon">🥇</div>
-            <h3>Sports Achievement</h3>
-            <p>
-                Supporting students to develop their sporting talents.
-            </p>
-        </div>
-
-        <div class="student-card">
-            <div class="student-icon">⭐</div>
-            <h3>Leadership</h3>
-            <p>
-                Developing responsible and confident student leaders.
-            </p>
-        </div>
-
-        <div class="student-card">
-            <div class="student-icon">🚀</div>
-            <h3>Innovation</h3>
-            <p>
-                Encouraging students to create ideas and solve problems.
-            </p>
-        </div>
-
-    </div>
-
-</section>
-
-
-<section class="student-cta">
-
-    <h2>Become Part of GS Kigeme A</h2>
-
-    <p>
-        Join our school community and grow through learning,
-        discipline and teamwork.
-    </p>
-
-    <a href="application.html" class="hero-apply-btn">
-        Apply for Admission
     </a>
 
-</section>
+
+    <!-- ================= JAVASCRIPT ================= -->
+    <script>
+
+        // Current year
+        document.getElementById("year").textContent =
+            new Date().getFullYear();
 
 
-<footer>
-    <p>&copy; 2026 GS Kigeme A. All Rights Reserved.</p>
-</footer>
+        // Mobile navigation
+        const menuToggle =
+            document.querySelector(".menu-toggle");
+
+        const mainNav =
+            document.querySelector(".main-nav");
+
+        menuToggle.addEventListener("click", () => {
+
+            mainNav.classList.toggle("show");
+
+        });
+
+
+        // Close menu after clicking a link
+        document.querySelectorAll(".main-nav a")
+            .forEach(link => {
+
+                link.addEventListener("click", () => {
+
+                    mainNav.classList.remove("show");
+
+                });
+
+            });
+
+
+        // Scroll reveal animation
+        const revealElements =
+            document.querySelectorAll(".reveal");
+
+        const revealObserver =
+            new IntersectionObserver(
+                (entries) => {
+
+                    entries.forEach(entry => {
+
+                        if (entry.isIntersecting) {
+
+                            entry.target.classList.add("active");
+
+                        }
+
+                    });
+
+                },
+                {
+                    threshold: 0.12
+                }
+            );
+
+
+        revealElements.forEach(element => {
+
+            revealObserver.observe(element);
+
+        });
+
+    </script>
 
 </body>
 </html>

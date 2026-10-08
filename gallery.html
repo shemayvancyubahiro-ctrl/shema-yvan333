@@ -1,207 +1,271 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Gallery | GS Kigeme A</title>
+    <title>Gallery | GS KIGEME A</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-<!-- ================= HEADER ================= -->
+<!-- =========================
+     HEADER
+========================= -->
+<header class="site-header">
+    <div class="container header-container">
 
-<header>
+        <a href="index.html" class="brand">
+            <img src="images/log333.jpg"
+                 alt="GS Kigeme A Logo"
+                 class="school-logo">
 
-    <h1>
-        <img src="logo (1).svg"
-             alt="GS Kigeme A Logo"
-             style="height:40px; vertical-align:middle; margin-right:10px;">
-        GS Kigeme A
-    </h1>
-
-    <nav>
-
-        <a href="index.html">Home</a>
-
-        <a href="about.html">About</a>
-
-        <a href="academics.html">Academics</a>
-
-        <a href="students.html">Students</a>
-
-        <a href="teachers.html">Teachers</a>
-
-        <a href="gallery.html" class="active">Gallery</a>
-
-        <a href="application.html" class="apply-link">
-            Apply Now
+            <div class="brand-text">
+                <h1>GS Kigeme A</h1>
+                <span>Learning today, leading tomorrow.</span>
+            </div>
         </a>
 
-    </nav>
+        <button class="menu-toggle" aria-label="Open navigation">
+            ☰
+        </button>
 
+        <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="academics.html">Academics</a>
+            <a href="students.html">Students</a>
+            <a href="teachers.html">Teachers</a>
+            <a href="gallery.html" class="active">Gallery</a>
+            <a href="news.html">News</a>
+            <a href="admission/index.php">Admission</a>
+        </nav>
+
+    </div>
 </header>
 
 
-<!-- ================= HERO ================= -->
-
+<!-- =========================
+     GALLERY HERO
+========================= -->
 <section class="gallery-hero">
+    <div class="container gallery-hero-content reveal">
 
-    <img src="logo (1).svg"
-         alt="GS Kigeme A Logo"
-         class="gallery-logo">
+        <span class="hero-badge">OUR SCHOOL • OUR STORY • OUR MOMENTS</span>
 
-    <h2>Our School Gallery</h2>
+        <h2>Life at GS KIGEME A.</h2>
 
-    <p>
-        Discover life, learning and activities at GS Kigeme A.
-    </p>
+        <p>
+            Explore the people, learning environment, activities and
+            memorable moments that make our school community special.
+        </p>
 
+        <div class="hero-buttons">
+            <a href="#gallery" class="btn btn-primary">Explore Gallery</a>
+            <a href="students.html" class="btn btn-outline">Student Life</a>
+        </div>
+
+    </div>
 </section>
 
 
-<!-- ================= INTRO ================= -->
+<!-- =========================
+     GALLERY INTRODUCTION
+========================= -->
+<section class="gallery-introduction section reveal">
+    <div class="container">
 
-<section class="gallery-intro">
+        <div class="section-heading">
+            <span>OUR MEMORIES</span>
 
-    <span class="section-tag">
-        SCHOOL MEMORIES
-    </span>
+            <h2>Moments Worth Remembering</h2>
 
-    <h2>Life at GS Kigeme A</h2>
+            <p>
+                From classroom learning to sports, creativity and school
+                events, every moment contributes to the GS KIGEME A story.
+            </p>
+        </div>
 
-    <p>
-        Explore some moments and places that represent
-        our school community, learning environment and
-        student life.
-    </p>
-
+    </div>
 </section>
 
 
-<!-- ================= GALLERY ================= -->
+<!-- =========================
+     GALLERY FILTER
+========================= -->
+<section class="gallery-section section" id="gallery">
 
-<section class="gallery-section">
+    <div class="container">
 
-    <div class="gallery-grid">
+        <div class="gallery-filter reveal">
 
+            <button class="gallery-filter-btn active" data-filter="all">
+                All
+            </button>
 
-        <!-- PHOTO 1 -->
+            <button class="gallery-filter-btn" data-filter="school">
+                School
+            </button>
 
-        <div class="gallery-item">
+            <button class="gallery-filter-btn" data-filter="students">
+                Students
+            </button>
 
-            <img src="SCHOOL.JPG.jpg"
-                 alt="GS Kigeme A School Gate">
+            <button class="gallery-filter-btn" data-filter="academic">
+                Academics
+            </button>
 
-            <div class="gallery-caption">
+            <button class="gallery-filter-btn" data-filter="sports">
+                Sports
+            </button>
 
-                <h3>School Gate</h3>
-
-                <p>
-                    Welcome to GS Kigeme A
-                </p>
-
-            </div>
-
-        </div>
-
-
-        <!-- PHOTO 2 -->
-
-        <div class="gallery-item">
-
-            <img src="schoolI.JPG"
-                 alt="GS Kigeme A School">
-
-            <div class="gallery-caption">
-
-                <h3>School Environment</h3>
-
-                <p>
-                    Our learning environment
-                </p>
-
-            </div>
+            <button class="gallery-filter-btn" data-filter="activities">
+                Activities
+            </button>
 
         </div>
 
 
-        <!-- PHOTO 3 -->
+        <!-- =========================
+             GALLERY GRID
+        ========================= -->
+        <div class="gallery-grid">
 
-        <div class="gallery-item">
+            <!-- IMAGE 1 -->
+            <div class="gallery-item reveal"
+                 data-category="school"
+                 data-title="Our School Environment">
 
-            <img src="school.jpg (4).jpg"
-                 alt="GS Kigeme A">
+                <img src="images/compound.jpg"
+                     alt="GS Kigeme A school compound">
 
-            <div class="gallery-caption">
-
-                <h3>Our School</h3>
-
-                <p>
-                    A place for learning and growth
-                </p>
-
-            </div>
-
-        </div>
-
-
-        <!-- PHOTO 4 -->
-
-        <div class="gallery-item">
-
-            <img src="school.jpg (5).jpg"
-                 alt="GS Kigeme A Community">
-
-            <div class="gallery-caption">
-
-                <h3>School Community</h3>
-
-                <p>
-                    Together we grow
-                </p>
+                <div class="gallery-overlay">
+                    <span>School</span>
+                    <h3>Our School Environment</h3>
+                    <button class="view-image">View</button>
+                </div>
 
             </div>
 
-        </div>
 
+            <!-- IMAGE 2 -->
+            <div class="gallery-item reveal"
+                 data-category="students"
+                 data-title="Student Life">
 
-        <!-- PHOTO 5 -->
+                <img src="images/student.jpg"
+                     alt="GS Kigeme A students">
 
-        <div class="gallery-item">
-
-            <img src="LIBRARY.jpg"
-                 alt="GS Kigeme A Library">
-
-            <div class="gallery-caption">
-
-                <h3>School Library</h3>
-
-                <p>
-                    A space for knowledge and discovery
-                </p>
+                <div class="gallery-overlay">
+                    <span>Students</span>
+                    <h3>Student Life</h3>
+                    <button class="view-image">View</button>
+                </div>
 
             </div>
 
-        </div>
+
+            <!-- IMAGE 3 -->
+            <div class="gallery-item reveal"
+                 data-category="academic"
+                 data-title="Learning Environment">
+
+                <img src="images/classroom.jpg"
+                     alt="GS Kigeme A classroom">
+
+                <div class="gallery-overlay">
+                    <span>Academics</span>
+                    <h3>Learning Environment</h3>
+                    <button class="view-image">View</button>
+                </div>
+
+            </div>
 
 
-        <!-- PHOTO 6 -->
+            <!-- IMAGE 4 -->
+            <div class="gallery-item reveal"
+                 data-category="school"
+                 data-title="School Overview">
 
-        <div class="gallery-item">
+                <img src="images/overview.jpg"
+                     alt="GS Kigeme A school overview">
 
-            <img src="schoolI.JPG"
-                 alt="Students at GS Kigeme A">
+                <div class="gallery-overlay">
+                    <span>School</span>
+                    <h3>School Overview</h3>
+                    <button class="view-image">View</button>
+                </div>
 
-            <div class="gallery-caption">
+            </div>
 
-                <h3>Student Life</h3>
 
-                <p>
-                    Learning and growing together
-                </p>
+            <!-- IMAGE 5 -->
+            <div class="gallery-item reveal"
+                 data-category="students"
+                 data-title="Students Together">
+
+                <img src="images/student.jpg"
+                     alt="GS Kigeme A students together">
+
+                <div class="gallery-overlay">
+                    <span>Students</span>
+                    <h3>Students Together</h3>
+                    <button class="view-image">View</button>
+                </div>
+
+            </div>
+
+
+            <!-- IMAGE 6 -->
+            <div class="gallery-item reveal"
+                 data-category="activities"
+                 data-title="School Activities">
+
+                <img src="images/compound.jpg"
+                     alt="GS Kigeme A school activities">
+
+                <div class="gallery-overlay">
+                    <span>Activities</span>
+                    <h3>School Activities</h3>
+                    <button class="view-image">View</button>
+                </div>
+
+            </div>
+
+
+            <!-- IMAGE 7 -->
+            <div class="gallery-item reveal"
+                 data-category="sports"
+                 data-title="Sports & Teamwork">
+
+                <img src="images/student.jpg"
+                     alt="GS Kigeme A student activities">
+
+                <div class="gallery-overlay">
+                    <span>Sports</span>
+                    <h3>Sports & Teamwork</h3>
+                    <button class="view-image">View</button>
+                </div>
+
+            </div>
+
+
+            <!-- IMAGE 8 -->
+            <div class="gallery-item reveal"
+                 data-category="academic"
+                 data-title="Academic Excellence">
+
+                <img src="images/library.jpg"
+                     alt="GS Kigeme A library">
+
+                <div class="gallery-overlay">
+                    <span>Academics</span>
+                    <h3>Academic Excellence</h3>
+                    <button class="view-image">View</button>
+                </div>
 
             </div>
 
@@ -212,82 +276,58 @@
 </section>
 
 
-<!-- ================= SCHOOL LIFE ================= -->
+<!-- =========================
+     SCHOOL MOMENTS
+========================= -->
+<section class="gallery-moments section light-section reveal">
 
-<section class="gallery-highlights">
+    <div class="container">
 
-    <h2>More Than a School</h2>
+        <div class="section-heading">
+            <span>BEYOND THE CLASSROOM</span>
 
-    <p>
-        GS Kigeme A is a community where students learn,
-        build friendships, develop talents and prepare
-        for their future.
-    </p>
-
-
-    <div class="highlight-grid">
-
-
-        <div class="highlight-card">
-
-            <div class="highlight-icon">
-                📚
-            </div>
-
-            <h3>Learning</h3>
+            <h2>More Than a School</h2>
 
             <p>
-                Creating opportunities for students to
-                develop knowledge and skills.
+                Our school community grows through learning, friendship,
+                leadership, teamwork and shared experiences.
             </p>
-
         </div>
 
 
-        <div class="highlight-card">
+        <div class="moments-grid">
 
-            <div class="highlight-icon">
-                ⚽
+            <div class="moment-card">
+                <div class="moment-icon">📚</div>
+                <h3>Learning</h3>
+                <p>
+                    Building knowledge and developing skills for the future.
+                </p>
             </div>
 
-            <h3>Sports</h3>
-
-            <p>
-                Encouraging teamwork, fitness and
-                discipline through sports.
-            </p>
-
-        </div>
-
-
-        <div class="highlight-card">
-
-            <div class="highlight-icon">
-                🎨
+            <div class="moment-card">
+                <div class="moment-icon">⚽</div>
+                <h3>Sports</h3>
+                <p>
+                    Developing teamwork, discipline and healthy competition.
+                </p>
             </div>
 
-            <h3>Talent</h3>
-
-            <p>
-                Supporting students to discover and
-                develop their talents.
-            </p>
-
-        </div>
-
-
-        <div class="highlight-card">
-
-            <div class="highlight-icon">
-                🤝
+            <div class="moment-card">
+                <div class="moment-icon">🎨</div>
+                <h3>Creativity</h3>
+                <p>
+                    Giving students opportunities to express their talents.
+                </p>
             </div>
 
-            <h3>Community</h3>
-
-            <p>
-                Building friendship, responsibility
-                and cooperation.
-            </p>
+            <div class="moment-card">
+                <div class="moment-icon">🤝</div>
+                <h3>Community</h3>
+                <p>
+                    Encouraging service, friendship and responsibility.
+                </p>
+            </div>
 
         </div>
 
@@ -296,127 +336,486 @@
 </section>
 
 
-<!-- ================= CTA ================= -->
+<!-- =========================
+     CTA
+========================= -->
+<section class="admission-cta reveal">
 
-<section class="gallery-cta">
+    <div class="container admission-cta-inner">
 
-    <h2>Become Part of Our Story</h2>
+        <div>
 
-    <p>
-        Join GS Kigeme A and become part of our
-        learning community.
-    </p>
+            <span>DISCOVER GS KIGEME A</span>
 
-    <a href="application.html"
-       class="hero-apply-btn">
+            <h2>
+                Be Part of Our Story.
+            </h2>
 
-        Apply for Admission
+            <p>
+                Discover our school, meet our community and begin your
+                educational journey with us.
+            </p>
 
-    </a>
+        </div>
+
+        <a href="admission/index.php" class="btn btn-light">
+            Apply Now →
+        </a>
+
+    </div>
 
 </section>
 
 
-<!-- ================= FOOTER ================= -->
+<!-- =========================
+     CONTACT
+========================= -->
+<section class="contact-section section reveal">
 
-<footer>
+    <div class="container">
 
-    <p>
-        &copy; 2026 GS Kigeme A.
-        All Rights Reserved.
-    </p>
+        <div class="section-heading">
+
+            <span>GET IN TOUCH</span>
+
+            <h2>Contact GS KIGEME A</h2>
+
+        </div>
+
+
+        <div class="contact-grid">
+
+            <div class="contact-card">
+
+                <div class="contact-icon">📞</div>
+
+                <h3>Phone</h3>
+
+                <a href="tel:0788600587">
+                    0788600587
+                </a>
+
+            </div>
+
+
+            <div class="contact-card">
+
+                <div class="contact-icon">✉️</div>
+
+                <h3>Email</h3>
+
+                <a href="mailto:gskigeme2@yahoo.com">
+                    gskigeme2@yahoo.com
+                </a>
+
+            </div>
+
+
+            <div class="contact-card">
+
+                <div class="contact-icon">💬</div>
+
+                <h3>WhatsApp</h3>
+
+                <a href="https://wa.me/250788600587"
+                   target="_blank">
+                    Chat With Us
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+<footer class="site-footer">
+
+    <div class="container">
+
+        <div class="footer-content">
+
+            <div>
+
+                <h3>GS KIGEME A</h3>
+
+                <p>
+                    Learning today, leading tomorrow.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="about.html">About</a>
+                <a href="academics.html">Academics</a>
+                <a href="students.html">Students</a>
+                <a href="teachers.html">Teachers</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="news.html">News</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © <span id="year"></span>
+                GS KIGEME A. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </div>
 
 </footer>
 
 
-<!-- ================= IMAGE VIEWER ================= -->
+<!-- =========================
+     LIGHTBOX
+========================= -->
+<div class="gallery-lightbox" id="galleryLightbox">
 
-<div id="imageViewer" class="image-viewer">
+    <button class="lightbox-close" id="lightboxClose">
+        &times;
+    </button>
 
-    <span class="close-viewer">&times;</span>
+    <button class="lightbox-prev" id="lightboxPrev">
+        &#10094;
+    </button>
 
-    <img id="viewerImage" src="" alt="Gallery Image">
+    <div class="lightbox-content">
 
-    <p id="viewerCaption"></p>
+        <img id="lightboxImage"
+             src=""
+             alt="Gallery preview">
+
+        <div class="lightbox-caption">
+            <h3 id="lightboxTitle"></h3>
+        </div>
+
+    </div>
+
+    <button class="lightbox-next" id="lightboxNext">
+        &#10095;
+    </button>
 
 </div>
 
 
-<!-- ================= JAVASCRIPT ================= -->
+<!-- =========================
+     WHATSAPP
+========================= -->
+<a href="https://wa.me/250788600587"
+   class="whatsapp-float"
+   target="_blank"
+   aria-label="Chat with GS Kigeme A on WhatsApp">
+    💬
+</a>
 
+
+<!-- =========================
+     JAVASCRIPT
+========================= -->
 <script>
 
-const galleryItems =
-    document.querySelectorAll(".gallery-item");
-
-const viewer =
-    document.getElementById("imageViewer");
-
-const viewerImage =
-    document.getElementById("viewerImage");
-
-const viewerCaption =
-    document.getElementById("viewerCaption");
-
-const closeViewer =
-    document.querySelector(".close-viewer");
+    /* Current year */
+    document.getElementById("year").textContent =
+        new Date().getFullYear();
 
 
-galleryItems.forEach(function(item) {
+    /* Mobile menu */
+    const menuToggle =
+        document.querySelector(".menu-toggle");
 
-    item.addEventListener("click", function() {
+    const mainNav =
+        document.querySelector(".main-nav");
+
+    menuToggle.addEventListener("click", () => {
+        mainNav.classList.toggle("show");
+    });
+
+
+    document.querySelectorAll(".main-nav a").forEach(link => {
+
+        link.addEventListener("click", () => {
+            mainNav.classList.remove("show");
+        });
+
+    });
+
+
+    /* Scroll reveal */
+    const revealElements =
+        document.querySelectorAll(".reveal");
+
+    const revealObserver =
+        new IntersectionObserver(
+            (entries) => {
+
+                entries.forEach(entry => {
+
+                    if (entry.isIntersecting) {
+
+                        entry.target.classList.add("active");
+
+                    }
+
+                });
+
+            },
+            {
+                threshold: 0.12
+            }
+        );
+
+
+    revealElements.forEach(element => {
+        revealObserver.observe(element);
+    });
+
+
+    /* =========================
+       GALLERY FILTER
+    ========================= */
+
+    const filterButtons =
+        document.querySelectorAll(".gallery-filter-btn");
+
+    const galleryItems =
+        document.querySelectorAll(".gallery-item");
+
+
+    filterButtons.forEach(button => {
+
+        button.addEventListener("click", () => {
+
+            filterButtons.forEach(btn => {
+                btn.classList.remove("active");
+            });
+
+            button.classList.add("active");
+
+            const filter =
+                button.getAttribute("data-filter");
+
+
+            galleryItems.forEach(item => {
+
+                const category =
+                    item.getAttribute("data-category");
+
+
+                if (filter === "all" || category === filter) {
+
+                    item.style.display = "block";
+
+                    setTimeout(() => {
+                        item.classList.add("active");
+                    }, 20);
+
+                } else {
+
+                    item.style.display = "none";
+
+                }
+
+            });
+
+        });
+
+    });
+
+
+    /* =========================
+       LIGHTBOX
+    ========================= */
+
+    const lightbox =
+        document.getElementById("galleryLightbox");
+
+    const lightboxImage =
+        document.getElementById("lightboxImage");
+
+    const lightboxTitle =
+        document.getElementById("lightboxTitle");
+
+    const closeButton =
+        document.getElementById("lightboxClose");
+
+    const previousButton =
+        document.getElementById("lightboxPrev");
+
+    const nextButton =
+        document.getElementById("lightboxNext");
+
+
+    let currentImage = 0;
+
+
+    function getVisibleItems() {
+
+        return Array.from(
+            document.querySelectorAll(
+                ".gallery-item"
+            )
+        ).filter(item =>
+            item.style.display !== "none"
+        );
+
+    }
+
+
+    function openLightbox(index) {
+
+        const items =
+            getVisibleItems();
+
+        if (!items.length) return;
+
+        currentImage =
+            (index + items.length) % items.length;
+
+        const item =
+            items[currentImage];
 
         const image =
             item.querySelector("img");
 
-        const title =
-            item.querySelector("h3").textContent;
-
-        viewerImage.src =
+        lightboxImage.src =
             image.src;
 
-        viewerImage.alt =
+        lightboxImage.alt =
             image.alt;
 
-        viewerCaption.textContent =
-            title;
+        lightboxTitle.textContent =
+            item.getAttribute("data-title");
 
-        viewer.classList.add("show");
+        lightbox.classList.add("show");
+
+        document.body.style.overflow =
+            "hidden";
+
+    }
+
+
+    function closeLightbox() {
+
+        lightbox.classList.remove("show");
+
+        document.body.style.overflow =
+            "";
+
+    }
+
+
+    function showNext() {
+
+        openLightbox(currentImage + 1);
+
+    }
+
+
+    function showPrevious() {
+
+        openLightbox(currentImage - 1);
+
+    }
+
+
+    galleryItems.forEach((item, index) => {
+
+        const viewButton =
+            item.querySelector(".view-image");
+
+        viewButton.addEventListener("click", (event) => {
+
+            event.stopPropagation();
+
+            const visibleItems =
+                getVisibleItems();
+
+            const visibleIndex =
+                visibleItems.indexOf(item);
+
+            openLightbox(visibleIndex);
+
+        });
+
+
+        item.querySelector("img")
+            .addEventListener("click", () => {
+
+                const visibleItems =
+                    getVisibleItems();
+
+                const visibleIndex =
+                    visibleItems.indexOf(item);
+
+                openLightbox(visibleIndex);
+
+            });
 
     });
 
-});
+
+    closeButton.addEventListener(
+        "click",
+        closeLightbox
+    );
 
 
-closeViewer.addEventListener("click", function() {
-
-    viewer.classList.remove("show");
-
-});
-
-
-viewer.addEventListener("click", function(event) {
-
-    if (event.target === viewer) {
-
-        viewer.classList.remove("show");
-
-    }
-
-});
+    nextButton.addEventListener(
+        "click",
+        showNext
+    );
 
 
-document.addEventListener("keydown", function(event) {
+    previousButton.addEventListener(
+        "click",
+        showPrevious
+    );
 
-    if (event.key === "Escape") {
 
-        viewer.classList.remove("show");
+    lightbox.addEventListener("click", (event) => {
 
-    }
+        if (event.target === lightbox) {
+            closeLightbox();
+        }
 
-});
+    });
+
+
+    document.addEventListener("keydown", (event) => {
+
+        if (!lightbox.classList.contains("show")) {
+            return;
+        }
+
+        if (event.key === "Escape") {
+            closeLightbox();
+        }
+
+        if (event.key === "ArrowRight") {
+            showNext();
+        }
+
+        if (event.key === "ArrowLeft") {
+            showPrevious();
+        }
+
+    });
 
 </script>
 
 </body>
 </html>
+

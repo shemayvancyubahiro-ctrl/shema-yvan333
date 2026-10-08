@@ -1,451 +1,89 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>News & Events | GS Kigeme A</title>
+    <title>News & Events | GS KIGEME A</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
 
 <!-- ================= HEADER ================= -->
+<header class="site-header">
 
-<header>
+    <div class="container header-container">
 
-    <h1>
-        <img src="logo (1).svg"
-             alt="GS Kigeme A Logo"
-             style="height:40px; vertical-align:middle; margin-right:10px;">
-        GS Kigeme A
-    </h1>
+        <a href="index.html" class="brand">
 
-    <nav>
+            <img src="images/log333.jpg"
+                 alt="GS KIGEME A Logo"
+                 class="school-logo">
 
-        <a href="index.html">Home</a>
+            <div class="brand-text">
+                <h1>GS KIGEME A</h1>
+                <span>Learning today, leading tomorrow.</span>
+            </div>
 
-        <a href="about.html">About</a>
-
-        <a href="academics.html">Academics</a>
-
-        <a href="students.html">Students</a>
-
-        <a href="teachers.html">Teachers</a>
-
-        <a href="gallery.html">Gallery</a>
-
-        <a href="news.html" class="active">News</a>
-
-        <a href="application.html" class="apply-link">
-            Apply Now
         </a>
 
-    </nav>
+        <button class="menu-toggle" aria-label="Open Menu">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <nav class="main-nav">
+
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="academics.html">Academics</a>
+            <a href="students.html">Students</a>
+            <a href="teachers.html">Teachers</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="news.html" class="active">News</a>
+          <a href="admission/index.php">Admission</a>
+
+        </nav>
+
+    </div>
 
 </header>
 
 
-<!-- ================= HERO ================= -->
-
+<!-- ================= NEWS HERO ================= -->
 <section class="news-hero">
 
-    <img src="logo (1).svg"
-         alt="GS Kigeme A Logo"
-         class="news-logo">
+    <div class="container news-hero-content reveal">
 
-    <h2>News & Events</h2>
-
-    <p>
-        Stay informed about school activities,
-        announcements and events.
-    </p>
-
-</section>
-
-
-<!-- ================= INTRO ================= -->
-
-<section class="news-intro">
-
-    <span class="section-tag">
-        SCHOOL UPDATES
-    </span>
-
-    <h2>What's Happening at GS Kigeme A?</h2>
-
-    <p>
-        Find important school information, activities,
-        events and announcements in one place.
-    </p>
-
-</section>
-
-
-<!-- ================= FEATURED NEWS ================= -->
-
-<section class="featured-news">
-
-    <div class="featured-content">
-
-        <span class="news-badge">
-            FEATURED
+        <span class="hero-badge">
+            <i class="fas fa-newspaper"></i>
+            SCHOOL NEWS • EVENTS • UPDATES
         </span>
 
-        <h2>Welcome to GS Kigeme A</h2>
+        <h2>News & Events</h2>
 
         <p>
-            Discover our school community, learning
-            environment and opportunities for students
-            to develop their knowledge, talents and
-            leadership skills.
+            Stay informed about the latest activities, achievements,
+            announcements and important events at GS KIGEME A.
         </p>
 
-        <a href="about.html" class="news-button">
-            Learn More
-        </a>
-
-    </div>
-
-</section>
-
-
-<!-- ================= LATEST NEWS ================= -->
-
-<section class="news-section">
-
-    <h2>Latest News</h2>
-
-    <p class="section-description">
-        Important information and stories from our
-        school community.
-    </p>
-
-
-    <div class="news-grid">
-
-
-        <!-- NEWS 1 -->
-
-        <article class="news-card">
-
-            <div class="news-image school-news">
-                <span>🏫</span>
-            </div>
-
-            <div class="news-content">
-
-                <span class="news-category">
-                    SCHOOL
-                </span>
-
-                <h3>
-                    School Community
-                </h3>
-
-                <p>
-                    GS Kigeme A continues to provide a
-                    supportive environment where students
-                    can learn and develop their abilities.
-                </p>
-
-                <span class="news-date">
-                    School Update
-                </span>
-
-            </div>
-
-        </article>
-
-
-        <!-- NEWS 2 -->
-
-        <article class="news-card">
-
-           <div id="newsList" class="news-list">
-  <p>Loading news...</p>
-</div>
-
-            <div class="news-content">
-
-                <span class="news-category">
-                    ACADEMICS
-                </span>
-
-                <h3>
-                    Learning & Academic Development
-                </h3>
-
-                <p>
-                    Students are encouraged to work hard,
-                    participate actively in learning and
-                    prepare for their academic goals.
-                </p>
-
-                <span class="news-date">
-                    Academic Update
-                </span>
-
-            </div>
-
-        </article>
-
-
-        <!-- NEWS 3 -->
-
-        <article class="news-card">
-
-            <div class="news-image student-news">
-                <span>👨‍🎓</span>
-            </div>
-
-            <div class="news-content">
-
-                <span class="news-category">
-                    STUDENTS
-                </span>
-
-                <h3>
-                    Student Activities
-                </h3>
-
-                <p>
-                    Students take part in clubs, sports,
-                    teamwork and other activities that
-                    support personal development.
-                </p>
-
-                <span class="news-date">
-                    Student Life
-                </span>
-
-            </div>
-
-        </article>
-
-
-        <!-- NEWS 4 -->
-
-        <article class="news-card">
-
-            <div class="news-image sports-news">
-                <span>⚽</span>
-            </div>
-
-            <div class="news-content">
-
-                <span class="news-category">
-                    SPORTS
-                </span>
-
-                <h3>
-                    Sports & Fitness
-                </h3>
-
-                <p>
-                    Sports activities help students develop
-                    teamwork, discipline, fitness and
-                    cooperation.
-                </p>
-
-                <span class="news-date">
-                    Sports Update
-                </span>
-
-            </div>
-
-        </article>
-
-
-        <!-- NEWS 5 -->
-
-        <article class="news-card">
-
-            <div class="news-image culture-news">
-                <span>🎭</span>
-            </div>
-
-            <div class="news-content">
-
-                <span class="news-category">
-                    CULTURE
-                </span>
-
-                <h3>
-                    Arts & Culture
-                </h3>
-
-                <p>
-                    School activities provide opportunities
-                    for students to express their creativity
-                    and appreciate culture.
-                </p>
-
-                <span class="news-date">
-                    Culture Update
-                </span>
-
-            </div>
-
-        </article>
-
-
-        <!-- NEWS 6 -->
-
-        <article class="news-card">
-
-            <div class="news-image ict-news">
-                <span>💻</span>
-            </div>
-
-            <div class="news-content">
-
-                <span class="news-category">
-                    ICT
-                </span>
-
-                <h3>
-                    Digital Learning
-                </h3>
-
-                <p>
-                    Students can develop computer and digital
-                    skills that support modern learning.
-                </p>
-
-                <span class="news-date">
-                    ICT Update
-                </span>
-
-            </div>
-
-        </article>
-
-    </div>
-
-</section>
-
-
-<!-- ================= EVENTS ================= -->
-
-<section class="events-section">
-
-    <span class="section-tag">
-        SCHOOL CALENDAR
-    </span>
-
-    <h2>Upcoming Events</h2>
-
-    <p class="section-description">
-        Keep track of important school activities.
-    </p>
-
-
-    <div class="events-list">
-
-
-        <!-- EVENT 1 -->
-
-        <div class="event-card">
-
-            <div class="event-date">
-
-                <strong>01</strong>
-
-                <span>EVENT</span>
-
-            </div>
-
-            <div class="event-info">
-
-                <h3>Academic Activities</h3>
-
-                <p>
-                    Academic learning, revision and
-                    student development activities.
-                </p>
-
-            </div>
-
-        </div>
-
-
-        <!-- EVENT 2 -->
-
-        <div class="event-card">
-
-            <div class="event-date">
-
-                <strong>02</strong>
-
-                <span>SPORT</span>
-
-            </div>
-
-            <div class="event-info">
-
-                <h3>Sports Activities</h3>
-
-                <p>
-                    Sports and physical activities
-                    for students.
-                </p>
-
-            </div>
-
-        </div>
-
-
-        <!-- EVENT 3 -->
-
-        <div class="event-card">
-
-            <div class="event-date">
-
-                <strong>03</strong>
-
-                <span>CLUB</span>
-
-            </div>
-
-            <div class="event-info">
-
-                <h3>Student Clubs</h3>
-
-                <p>
-                    Club activities supporting creativity,
-                    teamwork and leadership.
-                </p>
-
-            </div>
-
-        </div>
-
-
-        <!-- EVENT 4 -->
-
-        <div class="event-card">
-
-            <div class="event-date">
-
-                <strong>04</strong>
-
-                <span>COMMUNITY</span>
-
-            </div>
-
-            <div class="event-info">
-
-                <h3>Community Activities</h3>
-
-                <p>
-                    Activities that encourage students
-                    to contribute positively to society.
-                </p>
-
-            </div>
+        <div class="hero-buttons">
+
+            <a href="#latest-news" class="btn btn-primary">
+                <i class="fas fa-newspaper"></i>
+                Latest News
+            </a>
+
+            <a href="#events" class="btn btn-outline">
+                <i class="fas fa-calendar-days"></i>
+                Upcoming Events
+            </a>
 
         </div>
 
@@ -454,24 +92,23 @@
 </section>
 
 
-<!-- ================= NOTICE ================= -->
+<!-- ================= INTRODUCTION ================= -->
+<section class="news-introduction section">
 
-<section class="notice-section">
+    <div class="container">
 
-    <div class="notice-box">
+        <div class="section-heading reveal">
 
-        <div class="notice-icon">
-            📢
-        </div>
+            <span class="section-label">
+                KEEP CONNECTED
+            </span>
 
-        <div>
-
-            <h2>Important Notice</h2>
+            <h2>What's Happening at GS KIGEME A?</h2>
 
             <p>
-                Students and parents should regularly check
-                this page for official school announcements
-                and updated information.
+                Our school community is always learning, creating,
+                competing and working together. Explore our latest
+                stories and important school updates.
             </p>
 
         </div>
@@ -481,39 +118,753 @@
 </section>
 
 
+<!-- ================= NEWS FILTER ================= -->
+<section class="news-filter-section">
+
+    <div class="container">
+
+        <div class="news-filter reveal">
+
+            <button class="news-filter-btn active" data-filter="all">
+                All
+            </button>
+
+            <button class="news-filter-btn" data-filter="academic">
+                Academic
+            </button>
+
+            <button class="news-filter-btn" data-filter="event">
+                Events
+            </button>
+
+            <button class="news-filter-btn" data-filter="achievement">
+                Achievements
+            </button>
+
+            <button class="news-filter-btn" data-filter="announcement">
+                Announcements
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= LATEST NEWS ================= -->
+<section class="latest-news section" id="latest-news">
+
+    <div class="container">
+
+        <div class="section-heading reveal">
+
+            <span class="section-label">
+                LATEST UPDATES
+            </span>
+
+            <h2>School News</h2>
+
+            <p>
+                Discover recent activities and stories from our
+                students, teachers and school community.
+            </p>
+
+        </div>
+
+
+        <div class="news-grid">
+
+
+            <!-- NEWS 1 -->
+            <article class="news-card reveal"
+                     data-category="academic">
+
+                <div class="news-image">
+
+                    <img src="images/classroom.jpg"
+                         alt="Students learning in class"
+                         onerror="this.style.display='none';">
+
+                    <span class="news-category">
+                        Academic
+                    </span>
+
+                </div>
+
+                <div class="news-content">
+
+                    <div class="news-date">
+                        <i class="far fa-calendar"></i>
+                        School Update
+                    </div>
+
+                    <h3>
+                        Supporting Academic Excellence
+                    </h3>
+
+                    <p>
+                        GS KIGEME A continues to encourage students
+                        to develop strong study habits, discipline
+                        and a passion for learning.
+                    </p>
+
+                    <a href="#"
+                       class="news-read-more">
+                        Read More
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- NEWS 2 -->
+            <article class="news-card reveal"
+                     data-category="event">
+
+                <div class="news-image">
+
+                    <img src="images/compound.jpg"
+                         alt="GS KIGEME A school compound">
+
+                    <span class="news-category">
+                        Event
+                    </span>
+
+                </div>
+
+                <div class="news-content">
+
+                    <div class="news-date">
+                        <i class="far fa-calendar"></i>
+                        School Event
+                    </div>
+
+                    <h3>
+                        School Community Activities
+                    </h3>
+
+                    <p>
+                        Students and teachers take part in activities
+                        that promote teamwork, responsibility and
+                        community spirit.
+                    </p>
+
+                    <a href="#"
+                       class="news-read-more">
+                        Read More
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- NEWS 3 -->
+            <article class="news-card reveal"
+                     data-category="achievement">
+
+                <div class="news-image">
+
+                    <img src="images/student.jpg"
+                         alt="GS KIGEME A student">
+
+                    <span class="news-category">
+                        Achievement
+                    </span>
+
+                </div>
+
+                <div class="news-content">
+
+                    <div class="news-date">
+                        <i class="fas fa-trophy"></i>
+                        Student Achievement
+                    </div>
+
+                    <h3>
+                        Celebrating Student Success
+                    </h3>
+
+                    <p>
+                        We celebrate students who demonstrate
+                        commitment, discipline, creativity and
+                        excellence in their different areas.
+                    </p>
+
+                    <a href="#"
+                       class="news-read-more">
+                        Read More
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- NEWS 4 -->
+            <article class="news-card reveal"
+                     data-category="announcement">
+
+                <div class="news-image">
+
+                    <img src="images/library.jpg"
+                         alt="School library">
+
+                    <span class="news-category">
+                        Announcement
+                    </span>
+
+                </div>
+
+                <div class="news-content">
+
+                    <div class="news-date">
+                        <i class="fas fa-bullhorn"></i>
+                        School Announcement
+                    </div>
+
+                    <h3>
+                        Important School Updates
+                    </h3>
+
+                    <p>
+                        Important information for students, parents
+                        and the wider school community will be shared
+                        through our school communication channels.
+                    </p>
+
+                    <a href="#"
+                       class="news-read-more">
+                        Read More
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- NEWS 5 -->
+            <article class="news-card reveal"
+                     data-category="academic">
+
+                <div class="news-image">
+
+                    <img src="images/overview.jpg"
+                         alt="GS KIGEME A school">
+
+                    <span class="news-category">
+                        Academic
+                    </span>
+
+                </div>
+
+                <div class="news-content">
+
+                    <div class="news-date">
+                        <i class="fas fa-book-open"></i>
+                        Learning
+                    </div>
+
+                    <h3>
+                        Learning Beyond the Classroom
+                    </h3>
+
+                    <p>
+                        Our learning environment encourages students
+                        to connect classroom knowledge with practical
+                        skills, creativity and real-life experiences.
+                    </p>
+
+                    <a href="#"
+                       class="news-read-more">
+                        Read More
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- NEWS 6 -->
+            <article class="news-card reveal"
+                     data-category="event">
+
+                <div class="news-image">
+
+                    <img src="images/compound.jpg"
+                         alt="School activities">
+
+                    <span class="news-category">
+                        Event
+                    </span>
+
+                </div>
+
+                <div class="news-content">
+
+                    <div class="news-date">
+                        <i class="fas fa-users"></i>
+                        Student Activities
+                    </div>
+
+                    <h3>
+                        Building a Strong School Community
+                    </h3>
+
+                    <p>
+                        Through clubs, sports, leadership and
+                        community activities, students develop
+                        confidence and valuable life skills.
+                    </p>
+
+                    <a href="#"
+                       class="news-read-more">
+                        Read More
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= EVENTS ================= -->
+<section class="news-events section" id="events">
+
+    <div class="container">
+
+        <div class="section-heading reveal">
+
+            <span class="section-label">
+                MARK YOUR CALENDAR
+            </span>
+
+            <h2>Upcoming Events</h2>
+
+            <p>
+                Important activities and events for our school
+                community.
+            </p>
+
+        </div>
+
+
+        <div class="events-grid">
+
+
+            <div class="event-card reveal">
+
+                <div class="event-date-box">
+
+                    <strong>01</strong>
+                    <span>EVENT</span>
+
+                </div>
+
+                <div class="event-content">
+
+                    <span class="event-type">
+                        <i class="fas fa-calendar"></i>
+                        School Activity
+                    </span>
+
+                    <h3>
+                        Academic Activities
+                    </h3>
+
+                    <p>
+                        Students participate in activities designed
+                        to strengthen learning and academic skills.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="event-card reveal">
+
+                <div class="event-date-box">
+
+                    <strong>02</strong>
+                    <span>EVENT</span>
+
+                </div>
+
+                <div class="event-content">
+
+                    <span class="event-type">
+                        <i class="fas fa-futbol"></i>
+                        Student Life
+                    </span>
+
+                    <h3>
+                        Sports & Recreation
+                    </h3>
+
+                    <p>
+                        Sports and recreation activities encourage
+                        teamwork, discipline and healthy living.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="event-card reveal">
+
+                <div class="event-date-box">
+
+                    <strong>03</strong>
+                    <span>EVENT</span>
+
+                </div>
+
+                <div class="event-content">
+
+                    <span class="event-type">
+                        <i class="fas fa-users"></i>
+                        Community
+                    </span>
+
+                    <h3>
+                        Student Leadership Activities
+                    </h3>
+
+                    <p>
+                        Students develop leadership, communication
+                        and responsibility through school activities.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ANNOUNCEMENT ================= -->
+<section class="news-announcement section">
+
+    <div class="container">
+
+        <div class="announcement-box reveal">
+
+            <div class="announcement-icon">
+                <i class="fas fa-bullhorn"></i>
+            </div>
+
+            <div class="announcement-content">
+
+                <span>
+                    SCHOOL COMMUNICATION
+                </span>
+
+                <h2>
+                    Stay Connected With GS KIGEME A
+                </h2>
+
+                <p>
+                    Parents, students and visitors can contact the
+                    school for the latest information about school
+                    activities, admissions and announcements.
+                </p>
+
+            </div>
+
+            <a href="contact.html"
+               class="btn btn-primary">
+                Contact Us
+                <i class="fas fa-arrow-right"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
 <!-- ================= CTA ================= -->
+<section class="admission-cta section">
 
-<section class="news-cta">
+    <div class="container">
 
-    <h2>Want to Join GS Kigeme A?</h2>
+        <div class="cta-box reveal">
 
-    <p>
-        Start your admission application and become
-        part of our school community.
-    </p>
+            <span class="section-label">
+                JOIN OUR COMMUNITY
+            </span>
 
-    <a href="application.html"
-       class="hero-apply-btn">
+            <h2>
+                Ready to Become Part of GS KIGEME A?
+            </h2>
 
-        Apply for Admission
+            <p>
+                Learn more about our school and begin your
+                application journey.
+            </p>
 
-    </a>
+            <a href="admission/index.php"
+               class="btn btn-primary">
+                Apply Now
+                <i class="fas fa-arrow-right"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+<section class="contact-section section">
+
+    <div class="container">
+
+        <div class="section-heading reveal">
+
+            <span class="section-label">
+                CONTACT US
+            </span>
+
+            <h2>Get In Touch</h2>
+
+        </div>
+
+
+        <div class="contact-grid">
+
+            <div class="contact-card reveal">
+
+                <i class="fas fa-phone"></i>
+
+                <h3>Phone</h3>
+
+                <a href="tel:0788600587">
+                    0788600587
+                </a>
+
+            </div>
+
+
+            <div class="contact-card reveal">
+
+                <i class="fas fa-envelope"></i>
+
+                <h3>Email</h3>
+
+                <a href="mailto:gskigeme2@yahoo.com">
+                    gskigeme2@yahoo.com
+                </a>
+
+            </div>
+
+
+            <div class="contact-card reveal">
+
+                <i class="fab fa-whatsapp"></i>
+
+                <h3>WhatsApp</h3>
+
+                <a href="https://wa.me/250788600587"
+                   target="_blank">
+                    Chat With Us
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
 
 </section>
 
 
 <!-- ================= FOOTER ================= -->
+<footer class="site-footer">
 
-<footer>
+    <div class="container">
 
-    <p>
-        &copy; 2026 GS Kigeme A.
-        All Rights Reserved.
-    </p>
+        <div class="footer-content">
+
+            <div>
+
+                <h3>GS KIGEME A</h3>
+
+                <p>
+                    Learning today, leading tomorrow.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="academics.html">Academics</a>
+                <a href="students.html">Students</a>
+                <a href="teachers.html">Teachers</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="news.html">News</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                &copy; <span id="currentYear"></span>
+                GS KIGEME A. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </div>
 
 </footer>
-<script src="news.js"></script>
 
+
+<!-- ================= WHATSAPP ================= -->
+<a href="https://wa.me/250788600587"
+   class="whatsapp-float"
+   target="_blank"
+   aria-label="Chat on WhatsApp">
+
+    <i class="fab fa-whatsapp"></i>
+
+</a>
+
+
+<!-- ================= JAVASCRIPT ================= -->
+<script>
+
+    /* Current Year */
+    document.getElementById("currentYear").textContent =
+        new Date().getFullYear();
+
+
+    /* Mobile Menu */
+    const menuToggle = document.querySelector(".menu-toggle");
+    const mainNav = document.querySelector(".main-nav");
+
+    if (menuToggle) {
+
+        menuToggle.addEventListener("click", () => {
+
+            mainNav.classList.toggle("show");
+
+        });
+
+    }
+
+
+    /* Reveal Animation */
+    const revealElements =
+        document.querySelectorAll(".reveal");
+
+    const revealObserver =
+        new IntersectionObserver(
+            (entries, observer) => {
+
+                entries.forEach(entry => {
+
+                    if (entry.isIntersecting) {
+
+                        entry.target.classList.add("active");
+
+                        observer.unobserve(entry.target);
+
+                    }
+
+                });
+
+            },
+            {
+                threshold: 0.12
+            }
+        );
+
+
+    revealElements.forEach(element => {
+
+        revealObserver.observe(element);
+
+    });
+
+
+    /* News Filter */
+    const filterButtons =
+        document.querySelectorAll(".news-filter-btn");
+
+    const newsCards =
+        document.querySelectorAll(".news-card");
+
+
+    filterButtons.forEach(button => {
+
+        button.addEventListener("click", () => {
+
+            filterButtons.forEach(btn => {
+                btn.classList.remove("active");
+            });
+
+            button.classList.add("active");
+
+            const filter =
+                button.getAttribute("data-filter");
+
+
+            newsCards.forEach(card => {
+
+                const category =
+                    card.getAttribute("data-category");
+
+
+                if (filter === "all" || category === filter) {
+
+                    card.style.display = "block";
+
+                    setTimeout(() => {
+                        card.classList.add("active");
+                    }, 20);
+
+                } else {
+
+                    card.style.display = "none";
+
+                }
+
+            });
+
+        });
+
+    });
+
+</script>
 
 </body>
 </html>
